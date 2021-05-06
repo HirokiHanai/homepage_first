@@ -1,0 +1,231 @@
+@charset "utf-8";
+@import url(main_image.css);
+
+
+/*基本設定
+*************************************************************************************************************/
+body {
+	-webkit-text-size-adjust: 100%;
+	font-family:"ヒラギノ角ゴ" "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント*/
+	color: rgb(255, 255, 255);	/*文字色*/
+	font-size: 20px;
+	background: #222222;	/*背景色*/
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
+	font-size: 100%;
+	font-weight: normal;
+	list-style-type: none;
+}
+
+body,html {
+	width: 100%;
+	height: 100%;
+}
+
+
+
+h1{
+	font-size: 40px; 
+}
+
+h2 {
+	margin: 50px 0 0 0;
+	padding: 1rem 2rem;
+	border-left: 4px solid rgb(121, 109, 3);
+	color: rgb(121, 109, 3);
+}
+
+#main{
+	margin: 0px 30px;
+}
+
+p{
+	text-align: center;
+}
+/************************************************************************************************/
+
+/*画像の大きさ調整
+***************************************************************************************/
+img {
+	border: none;
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+/**************************************************************************************/
+
+
+/*フッター
+************************************************************************************************************/
+footer{
+	padding: 20px;
+	background-color: #9E9E9E;
+} 
+/***********************************************************************************************************/
+
+
+/*表
+*************************************************************************************************************/
+table{
+	border-collapse:collapse;
+	margin:0 auto;
+}
+  td,th{
+	padding:14px 10px;
+}
+  th,td {
+	border-bottom:2px solid #80bcff;
+}
+/**************************************************************************************************************/
+
+
+/*お知らせ画面
+***************************************************************************************************************/
+ *, *:before, *:after {
+	 -moz-box-sizing: border-box; 
+	 -webkit-box-sizing: border-box; 
+	 box-sizing: border-box;
+	}
+  .info {
+	  margin: 1em auto;
+	  padding: 0 2em;
+	  border: 2px solid rgb(159, 159, 159);
+	  text-align: left;
+	  line-height: 1.3;
+	  color: rgb(255, 255, 255);
+	  overflow: auto;
+	  width: 70%;
+	  height: 10em;
+	  background-color: #333333;
+	}
+  .info dl {
+	  padding: 0.5em 0;
+	  border-bottom:2px solid #80bcff;
+	}
+  .info dt {
+	  padding-bottom: 0;
+	  width: 8em;
+	}
+  @media screen and (min-width: 480px) {
+  .info dt {
+	  clear: left;
+	float: left;
+	}
+  .info dd {
+	  margin-left: 0.5em;
+	}
+  }
+/**************************************************************************************************************/
+
+
+/*リンク1
+**************************************************************************************************************/
+.cp_block {
+	margin: 5em auto;
+	text-align: center;
+}
+.cp_textlink06 {
+	position: relative;
+	display: inline-block;
+	padding: 0.1em 0.3em;
+	text-decoration: none;
+	color: #ffffff;
+}
+.cp_textlink06:after {
+	position: absolute;
+	bottom: 50%;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	content: '';
+	transition: all 0.3s ease;
+	opacity: 0;
+	border-radius: 10px;
+	background-color: #ffcc00;
+}
+.cp_textlink06:hover:after {
+	bottom: 0;
+	height: 100%;
+	opacity: 0.3;
+}
+a {
+	color: #fff;
+	transition: 0.2s;
+}
+a:hover {
+	text-decoration: none;
+}
+/****************************************************************************************************************/
+
+/*マップ
+****************************************************************************************************************/
+#map, #email{
+	text-align: center;
+}
+/***************************************************************************************************************/
+
+
+/*リンク2
+***************************************************************************************************************/
+.cp_link {
+	position: relative;
+	padding: 0.1em 0.3em;
+	display: inline-block;
+	transition: .3s;
+	color: #00ACC1;
+}
+.cp_link::before,
+.cp_link::after {
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 5px;
+	background-color: rgb(121, 109, 3);
+	transition: .3s;
+}
+.cp_link::before {
+	top: 0;
+	left: 0;
+}
+.cp_link::after {
+	bottom: 0;
+	right: 0;
+}
+.cp_link:hover::before,
+.cp_link:hover::after {
+	width: 100%;
+}
+/****************************************************************************************************************/
+
+
+/*フッター位置
+****************************************************************************************************************/
+#footer_height1{
+	margin: 100px 0 0 0;
+}
+#footer_height2{
+	margin: 320px 0 0 0;
+}
+/***************************************************************************************************************/
+
+/*リンク間距離
+***************************************************************************************************************/
+.link_height{
+	padding: 0.5em 0;
+}
+/***************************************************************************************************************/
+
+/*
+body {
+	display: flex;
+	flex-flow: column;
+	min-height: 100vh;
+}
+
+#main {
+	flex: 1;
+}
+*/
